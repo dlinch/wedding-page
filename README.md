@@ -15,9 +15,10 @@ yarn run serve
 yarn run build
 ```
 
-### Run your tests
+### Deploying
 ```
-yarn run test
+build the production bundle, check it into history
+deploy to heroku and node will automatically serve up the application
 ```
 
 ### Lints and fixes files
