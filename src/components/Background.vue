@@ -1,5 +1,5 @@
 <template>
-  <div class="background" :style="{'backgroundImage': `url(${require('@/assets/black_beach.jpg')})`}">
+  <div class="background" :style="{'backgroundImage': `url(${require(href)})`}">
 
   </div>
 </template>
@@ -21,5 +21,8 @@
 <script>
 export default {
   name: 'Background',
+  props: {
+    href: String,
+  },
 };
 </script>
