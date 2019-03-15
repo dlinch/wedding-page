@@ -4,6 +4,15 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'Background',
+  props: {
+    href: String,
+  },
+};
+</script>
+
 <style scoped lang="scss">
 .background {
   background-image: center;
@@ -17,12 +26,3 @@
   z-index:  -1;
 }
 </style>
-
-<script>
-export default {
-  name: 'Background',
-  props: {
-    href: String,
-  },
-};
-</script>

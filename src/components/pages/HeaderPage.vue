@@ -1,24 +1,24 @@
 <template>
-  <div>
+  <div class="header-page">
     <Background href="@/assets/mountainscape.jpg"/>
     <h3>Derik & Ashley</h3>
     <h1>We're Getting Married!</h1>
     <h2>September 13, 2019 | Boulder | Colorado</h2>
-    <Button path="google.com" text="RSVP" />
+    <RedButton path="google.com" text="RSVP" />
   </div>
 </template>
 
 <script>
-import Background from '@/components/Background.vue'
-import Button from '@/components/Button.vue'
+import Background from '@/components/Background.vue';
+import RedButton from '@/components/RedButton.vue';
 
 export default {
   name: 'HeaderPage',
   components: {
     Background,
-    Button,
-  }
-}
+    RedButton,
+  },
+};
 </script>
 
 <script scoped lang="scss">

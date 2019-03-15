@@ -1,17 +1,17 @@
 <template>
   <div class="button">
-    <a :href="path">{{ text }}</a>
+    <a :href="path" target="_blank">{{ text }} Button!</a>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Button',
+  name: 'RedButton',
   props: {
     path: String,
     text: String,
-  }
-}
+  },
+};
 </script>
 
 <style scoped lang="scss">
