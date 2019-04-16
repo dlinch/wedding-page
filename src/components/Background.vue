@@ -1,8 +1,10 @@
 <template>
-  <div class="background" :style="{'backgroundImage': `url(${require(href)})`}">
-
+  <!-- <div class="background" :style="{'backgroundImage': `url(${require(href)})`}"></div> -->
+  <div class="background" :style="{'backgroundImage': `url(${require('@/assets/mountainscape.jpg')})`}">
+      <slot>Stuff</slot>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -15,7 +17,8 @@ export default {
 
 <style scoped lang="scss">
 .background {
-  background-image: center;
+  display: inline;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;

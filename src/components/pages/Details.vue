@@ -15,8 +15,8 @@ export default {
 
 <style scoped lang="scss">
 .details {
-  width: 1vw;
-  height: 100%;
+  height: 100vh;
+  text-align: center;
 }
 
 .accomodations {
