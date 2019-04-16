@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import Background from '@/components/Background.vue';
-import RedButton from '@/components/RedButton.vue';
+import Background from '../Background.vue';
+import RedButton from '../RedButton.vue';
 
 export default {
   name: 'HeaderPage',

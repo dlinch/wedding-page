@@ -1,20 +1,20 @@
 <template>
   <div class="home">
-    <HeaderPage />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <Details />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-import HeaderPage from '@/components/pages/HeaderPage.vue';
+import Header from '@/components/pages/Header.vue';
+import Details from '@/components/pages/Details.vue';
 
 export default {
   name: 'home',
   components: {
-    HeaderPage,
-    HelloWorld,
+    Details,
+    Header,
   },
 };
 </script>
