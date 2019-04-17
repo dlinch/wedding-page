@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.663176f5b9b53f9d0e752d0c8ac0011b.js"
+  "/precache-manifest.633e38f03c56e25ba4880689d27d8542.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "wedding-page"});
