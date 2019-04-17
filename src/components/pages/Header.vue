@@ -4,7 +4,7 @@
       <h3>Derik & Ashley</h3>
       <h1>We're Getting Married!</h1>
       <h2>September 13, 2019 | Boulder | Colorado</h2>
-      <RedButton path="https://www.google.com" text="RSVP" />
+      <RedButton :path="rsvp" text="RSVP" />
     </Background>
   </div>
 </template>
@@ -19,11 +19,22 @@ export default {
     Background,
     RedButton,
   },
+  data() {
+    return {
+      rsvp: 'http://linchrunyan.rsvpify.com',
+    };
+  },
 };
 </script>
 
 <style scoped lang="scss">
 .header {
   height: 100vh;
+}
+
+.background {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
 }
 </style>
