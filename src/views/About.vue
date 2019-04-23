@@ -1,16 +1,16 @@
 <template>
   <div class="about">
-    <Background />
+    <MountainBackground />
     <h1>This is an about page</h1>
   </div>
 </template>
 
 <script>
-import Background from '@/components/Background.vue';
+import MountainBackground from '@/components/MountainBackground.vue';
 
 export default {
   components: {
-    Background,
+    MountainBackground,
   },
 };
 </script>

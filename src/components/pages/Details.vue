@@ -1,9 +1,11 @@
 <template>
   <div class="details">
-    <Background href="@/assets/poncho.jpg">
-      <span>Come Join Us!</span>
-      <span>Friday, September 13, 2019</span>
-    </Background>
+    <PonchoBackground>
+      <!-- <div class="background"> -->
+        <span>Come Join Us!</span>
+        <span>Friday, September 13, 2019</span>
+      <!-- </div> -->
+    </PonchoBackground>
     <h2>The Details</h2>
     <p>Stuff in here</p>
     <div class="links">
@@ -44,13 +46,13 @@
 </template>
 
 <script>
-import Background from '@/components/Background.vue';
+import PonchoBackground from '@/components/PonchoBackground.vue';
 import RedButton from '@/components/RedButton.vue';
 
 export default {
   name: 'Details',
   components: {
-    Background,
+    PonchoBackground,
     RedButton,
   },
   data() {

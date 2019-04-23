@@ -1,22 +1,22 @@
 <template>
   <div class="header">
-    <Background href="@/assets/mountainscape.jpg">
+    <MountainBackground>
       <h3>Derik & Ashley</h3>
       <h1>We're Getting Married!</h1>
       <h2>September 13, 2019 | Boulder | Colorado</h2>
       <RedButton :path="rsvp" text="RSVP" />
-    </Background>
+    </MountainBackground>
   </div>
 </template>
 
 <script>
-import Background from '../Background.vue';
+import MountainBackground from '../MountainBackground.vue';
 import RedButton from '../RedButton.vue';
 
 export default {
   name: 'HeaderPage',
   components: {
-    Background,
+    MountainBackground,
     RedButton,
   },
   data() {

@@ -1,5 +1,4 @@
 <template>
-  <!-- <div class="background" :style="{'backgroundImage': `url(${require(href)})`}"></div> -->
   <div class="background" :style="{'backgroundImage': `url(${require('@/assets/mountainscape.jpg')})`}">
       <slot>Stuff</slot>
   </div>
@@ -8,16 +7,12 @@
 
 <script>
 export default {
-  name: 'Background',
-  props: {
-    href: String,
-  },
+  name: 'MountainBackground',
 };
 </script>
 
 <style scoped lang="scss">
 .background {
-  display: inline;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
