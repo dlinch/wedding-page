@@ -1,6 +1,6 @@
 <template>
   <div class="background" :style="{'backgroundImage': `url(${require('@/assets/mountainscape.jpg')})`}">
-      <slot>Stuff</slot>
+    <slot>Stuff</slot>
   </div>
 </template>
 
@@ -17,7 +17,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;
-  min-height: 50rem;
+  min-height: 100vh;
   position: relative;
   top: 0;
   width: 100%;

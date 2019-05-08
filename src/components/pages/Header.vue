@@ -1,23 +1,25 @@
 <template>
   <div class="header">
     <MountainBackground>
-      <h3>Derik & Ashley</h3>
-      <h1>We're Getting Married!</h1>
-      <h2>September 13, 2019 | Boulder | Colorado</h2>
-      <RedButton :path="rsvp" text="RSVP" />
+      <div class="content">
+        <h3>Derik & Ashley</h3>
+        <h1>We're Getting Married!</h1>
+        <h2>September 13, 2019 | Boulder | Colorado</h2>
+        <Button :path="rsvp" text="RSVP" />
+      </div>
     </MountainBackground>
   </div>
 </template>
 
 <script>
 import MountainBackground from '../MountainBackground.vue';
-import RedButton from '../RedButton.vue';
+import Button from '../Button.vue';
 
 export default {
   name: 'HeaderPage',
   components: {
     MountainBackground,
-    RedButton,
+    Button,
   },
   data() {
     return {
@@ -28,13 +30,40 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.header {
+$blue: #819da0;
+$oxblood: #360c15;
+$plum: #66454e;
+
+.content {
   height: 100vh;
+  display: grid;
+  grid-template: 60% 10% 10% 10% 10% / 50% 50%;
 }
 
-.background {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+h1, h2 {
+  color: $oxblood;
+  text-shadow: 1px 1px 4px white;
+}
+
+h1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+h2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+h3 {
+  color: $blue;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.button {
+  grid-column: 2;
+  grid-row: 4;
+  margin: 2rem auto 0;
 }
 </style>

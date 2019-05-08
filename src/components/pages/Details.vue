@@ -28,17 +28,17 @@
         <li>
           <h4>Hilton Garden Inn</h4>
           <h5>(Ooh you fancy)</h5>
-          <RedButton :path="hilton" text="Book Now" />
+          <Button :path="hilton" text="Book Now" />
         </li>
         <li>
           <h4>Embassy Suites</h4>
           <h5>You like your porridge just right)</h5>
-          <RedButton :path="hilton" text="Book Now" />
+          <Button :path="hilton" text="Book Now" />
         </li>
         <li>
           <h4>Homewood Suites</h4>
           <h5>(Ballin' on a budget)</h5>
-          <RedButton :path="homewood" text="Book Now" />
+          <Button :path="homewood" text="Book Now" />
         </li>
       </ul>
     </div>
@@ -47,13 +47,13 @@
 
 <script>
 import PonchoBackground from '@/components/PonchoBackground.vue';
-import RedButton from '@/components/RedButton.vue';
+import Button from '@/components/Button.vue';
 
 export default {
   name: 'Details',
   components: {
     PonchoBackground,
-    RedButton,
+    Button,
   },
   data() {
     return {

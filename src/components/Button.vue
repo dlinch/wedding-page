@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'RedButton',
+  name: 'Button',
   props: {
     path: String,
     text: String,
@@ -19,7 +19,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #360615;
+  background-color: #819da0;
   width: 240px;
   height: 47px;
 
