@@ -8,7 +8,8 @@
     </PonchoBackground>
     <div class="information">
       <h2>The Details</h2>
-      <p>Stuff in here</p>
+      <!-- eslint-disable-next-line -->
+      <p>Lorem ipsum dolor sit amet, populo delenit fierent per eu. Vix te iisque malorum reformidans, ea probatus electram per, ei sale definiebas contentiones ius. Delenit urbanitas usu id, ea diam nusquam est. No sit fierent delicatissimi, graeci eloquentiam cum eu. Malorum vivendo pertinax ut usu, id quas sensibus pri. Per at nobis viderer legimus.</p>
       <div class="links">
         <ul>
           <li>
@@ -90,6 +91,9 @@ export default {
     font-size: 4rem;
   }
   > p {
+    width: 60%;
+    margin: auto;
+    text-align: left;
     padding-bottom: 3rem;
   }
 }

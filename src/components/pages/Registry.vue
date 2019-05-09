@@ -1,6 +1,6 @@
 <template>
   <div class="registry">
-    <h2>REGISTRY</h2>
+    <h2>Registry</h2>
     <h4>We are registered at the following stores:</h4>
     <a
       class="zola-registry-embed"
@@ -22,6 +22,16 @@ export default {
 .registry {
   height: 100vh;
   text-align: center;
+}
+
+h2 {
+  margin: 15% 0 1%;
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 0 0 15%;
 }
 
 .footer {
