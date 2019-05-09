@@ -30,9 +30,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-$blue: #819da0;
-$oxblood: #360c15;
-$plum: #66454e;
+@import '@/variables.scss';
 
 .content {
   height: 100vh;

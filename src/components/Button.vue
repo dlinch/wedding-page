@@ -15,16 +15,18 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/variables.scss';
+
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #819da0;
+  background-color: $blue;
   width: 240px;
   height: 47px;
 
   a, a:visited {
-    color: #eae4d4;
+    color: $tan;
     text-decoration: none;
 
     &:hover {

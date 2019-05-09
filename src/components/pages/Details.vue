@@ -1,59 +1,40 @@
 <template>
   <div class="details">
     <PonchoBackground>
-      <!-- <div class="background"> -->
+      <div class="image-content">
         <span>Come Join Us!</span>
         <span>Friday, September 13, 2019</span>
-      <!-- </div> -->
+      </div>
     </PonchoBackground>
-    <h2>The Details</h2>
-    <p>Stuff in here</p>
-    <div class="links">
-      <ul>
-        <li>
-          Ceremony | 5:00pm
-        </li>
-        <li>
-          September 13th, 2019
-        </li>
-        <li>
-          <a :href="map">
-            38470 Boulder Canyon Dr. Boulder, CO 80302
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="accomodations">
-      <ul>
-        <li>
-          <h4>Hilton Garden Inn</h4>
-          <h5>(Ooh you fancy)</h5>
-          <Button :path="hilton" text="Book Now" />
-        </li>
-        <li>
-          <h4>Embassy Suites</h4>
-          <h5>You like your porridge just right)</h5>
-          <Button :path="hilton" text="Book Now" />
-        </li>
-        <li>
-          <h4>Homewood Suites</h4>
-          <h5>(Ballin' on a budget)</h5>
-          <Button :path="homewood" text="Book Now" />
-        </li>
-      </ul>
+    <div class="information">
+      <h2>The Details</h2>
+      <p>Stuff in here</p>
+      <div class="links">
+        <ul>
+          <li>
+            Ceremony | 5:00pm
+          </li>
+          <li>
+            September 13th, 2019
+          </li>
+          <li>
+            <a :href="map">
+              38470 Boulder Canyon Dr. Boulder, CO 80302
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import PonchoBackground from '@/components/PonchoBackground.vue';
-import Button from '@/components/Button.vue';
 
 export default {
   name: 'Details',
   components: {
     PonchoBackground,
-    Button,
   },
   data() {
     return {
@@ -67,13 +48,50 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.background {
-  width: 100%;
-  height: 30%;
-}
+@import '@/variables.scss';
+
 .details {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   text-align: center;
+}
+
+.background {
+  width: 100%;
+  height: 60%;
+}
+
+.image-content {
+  display: grid;
+  height: 100%;
+  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
+  color: $tan;
+  font-size: 2rem;
+
+  span {
+    grid-column: 2;
+    grid-row: 2;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  span:nth-child(2) {
+    margin: 3rem;
+  }
+}
+
+.information {
+  background-color: $tan;
+  height: 40%;
+
+  h2 {
+    margin: 0;
+    padding: 3rem 0 1.5rem;
+    font-size: 4rem;
+  }
+  > p {
+    padding-bottom: 3rem;
+  }
 }
 
 ul {
@@ -86,9 +104,4 @@ ul {
     display: inline;
   }
 }
-
-.accomodations {
-  background-color: '#819da0';
-}
-
 </style>

@@ -13,14 +13,13 @@ export default {
 
 <style scoped lang="scss">
 .background {
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
   left: 0;
   min-height: 100vh;
   position: relative;
   top: 0;
-  width: 100%;
   z-index:  -1;
 }
 </style>
