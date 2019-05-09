@@ -54,9 +54,11 @@ h2 {
 }
 
 h3 {
+  font-size: 2.5rem;
   color: $blue;
   grid-column: 2;
   grid-row: 1;
+  margin: 15% 15% 0 0;
 }
 
 .button {

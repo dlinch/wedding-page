@@ -13,12 +13,15 @@
       <div class="links">
         <ul>
           <li>
+            <font-awesome-icon icon="fas fa-glass-cheers" />
             Ceremony | 5:00pm
           </li>
           <li>
+            <font-awesome-icon icon="fas fa-calendar-alt" />
             September 13th, 2019
           </li>
           <li>
+            <font-awesome-icon icon="fas fa-map" />
             <a :href="map">
               38470 Boulder Canyon Dr. Boulder, CO 80302
             </a>
