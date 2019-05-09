@@ -17,8 +17,7 @@ yarn run build
 
 ### Deploying
 ```
-build the production bundle, check it into history
-deploy to heroku and node will automatically serve up the application
+push to the heroku branch, it will build the production bundle then start the server
 ```
 
 ### Lints and fixes files
