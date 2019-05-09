@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/variables.scss';
+
 .registry {
   height: 100vh;
   text-align: center;
@@ -35,7 +37,13 @@ h4 {
 }
 
 .footer {
-  background-color: '#819da0';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12%;
+  font-size: 2.2rem;
+  background-color: $blue;
+  color: $tan;
 }
 
 </style>
