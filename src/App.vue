@@ -7,10 +7,11 @@
 <style lang="scss">
 @import '@/variables.scss';
 @import 'normalize-scss';
+@import url('https://fonts.googleapis.com/css?family=Spectral');
 @include normalize();
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Spectral', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
