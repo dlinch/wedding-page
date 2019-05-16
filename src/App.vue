@@ -16,4 +16,12 @@
   text-align: center;
   color: $text;
 }
+
+body, html {
+  min-width: 100%;
+}
+
+a, a:visited, a:hover {
+  color: $text;
+}
 </style>

@@ -66,4 +66,13 @@ h3 {
   grid-row: 4;
   margin: 2rem auto 0;
 }
+
+@media screen and (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+  .button {
+    width: 120px;
+  }
+}
 </style>

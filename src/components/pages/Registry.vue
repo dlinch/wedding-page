@@ -46,4 +46,18 @@ h4 {
   color: $tan;
 }
 
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  font-size: 1.5rem;
+  height: 8%;
+}
 </style>

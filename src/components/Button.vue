@@ -22,7 +22,7 @@ export default {
   align-items: center;
   justify-content: center;
   background-color: $blue;
-  width: 240px;
+  width: 200px;
   height: 47px;
 
   a, a:visited {

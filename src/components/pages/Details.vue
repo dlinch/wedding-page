@@ -18,12 +18,14 @@
           </li>
           <li>
             <font-awesome-icon icon="calendar-alt" />
-            September 13th, 2019
+            <a :href="calendar">
+              September 13th, 2019
+            </a>
           </li>
           <li>
             <font-awesome-icon icon="map" />
             <a :href="map">
-              38470 Boulder Canyon Dr. Boulder, CO 80302
+              38470 Boulder Canyon Dr. Boulder, CO
             </a>
           </li>
         </ul>
@@ -42,6 +44,8 @@ export default {
   },
   data() {
     return {
+      // eslint-disable-next-line
+      calendar: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MjJiYzM3YXM5N3N0dnFyODAycnY2M3ExOGYgZGxpbmNoMzNAbQ&tmsrc=dlinch33%40gmail.com',
       hilton: 'http://hiltongardeninn.hilton.com/en/gi/groups/personalized/W/WBUBOGI-RLW-20190912/index.jhtml',
       homewood: 'http://homewoodsuites.hilton.com/en/hw/groups/personalized/B/BOUCOHW-RLW-20190912/index.jhtml',
       // eslint-disable-next-line
@@ -102,13 +106,38 @@ export default {
 }
 
 ul {
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  width: 100%;
+
   li {
-    display: inline;
+    width: 30%;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .image-content {
+    font-size: 1.5rem;
+  }
+
+  .background {
+    height: 30%;
+  }
+
+  .information {
+    height: 70%;
+
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      width: 90%;
+    }
+  }
+   ul {
+     justify-content: space-between;
+   }
 }
 </style>

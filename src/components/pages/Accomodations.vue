@@ -9,7 +9,7 @@
       </li>
       <li>
         <h4>Embassy Suites</h4>
-        <h5>You like your porridge just right)</h5>
+        <h5>(You like your porridge just right)</h5>
         <Button :path="hilton" text="Book Now" />
       </li>
       <li>
@@ -33,17 +33,38 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.accomodations {
+  width: 100vw;
+  height: 40vh;
+}
+
 h2 {
   font-size: 4rem;
 }
+
 ul {
+  padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style: none;
-  width: 100%;
+  height: 60%;
+
   li {
-    display: inline;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 2rem;
+  }
+  ul {
+     justify-content: space-between;
+   }
+
+  .button {
+    width: 120px;
   }
 }
 </style>
