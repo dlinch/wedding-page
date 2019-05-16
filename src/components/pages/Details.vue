@@ -114,6 +114,7 @@ ul {
 
   li {
     width: 30%;
+    font-size: 1.2rem;
   }
 }
 
@@ -138,6 +139,9 @@ ul {
   }
    ul {
      justify-content: space-between;
+     li {
+      font-size: 1rem;
+     }
    }
 }
 </style>
