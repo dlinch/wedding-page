@@ -120,7 +120,7 @@ ul {
 
 @media screen and (max-width: 480px) {
    ul {
-     justify-content: space-between;
+     justify-content: space-around;
      li {
       font-size: 1rem;
      }
@@ -128,6 +128,10 @@ ul {
 
   .image-content {
     font-size: 1.5rem;
+
+    span:first-child {
+      margin-top: 6px;
+    }
   }
 
   .background {

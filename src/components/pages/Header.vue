@@ -40,7 +40,7 @@ export default {
 
 h1, h2 {
   color: $oxblood;
-  text-shadow: 1px 1px 4px white;
+  text-shadow: 2px 2px 4px white;
 }
 
 h1 {
@@ -70,6 +70,7 @@ h3 {
 @media screen and (max-width: 480px) {
   h1, h2 {
     font-size: 1.5rem;
+    text-shadow: -2px 2px 4px white;
   }
 
   .button {
