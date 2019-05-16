@@ -65,6 +65,19 @@ export default {
   text-align: center;
 }
 
+ul {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+
+  li {
+    width: 30%;
+    font-size: 1.2rem;
+  }
+}
+
 .background {
   width: 100%;
   height: 60%;
@@ -105,20 +118,14 @@ export default {
   }
 }
 
-ul {
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-
-  li {
-    width: 30%;
-    font-size: 1.2rem;
-  }
-}
-
 @media screen and (max-width: 480px) {
+   ul {
+     justify-content: space-between;
+     li {
+      font-size: 1rem;
+     }
+   }
+
   .image-content {
     font-size: 1.5rem;
   }
@@ -137,11 +144,5 @@ ul {
       width: 90%;
     }
   }
-   ul {
-     justify-content: space-between;
-     li {
-      font-size: 1rem;
-     }
-   }
 }
 </style>

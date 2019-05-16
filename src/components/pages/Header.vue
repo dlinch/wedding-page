@@ -71,6 +71,7 @@ h3 {
   h1, h2 {
     font-size: 1.5rem;
   }
+
   .button {
     width: 120px;
   }

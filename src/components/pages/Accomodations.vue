@@ -63,9 +63,29 @@ ul {
   h2 {
     font-size: 2rem;
   }
+
   ul {
-     justify-content: space-between;
+    height: 75%;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+
+    li {
+      width: 90%;
+      height: 60%;
+
+      h4, h5 {
+        margin: 0;
+      }
+
+      h4 {
+        margin-top: 25px;
+      }
+    }
    }
+
+  .accomodations {
+    height: 90%;
+  }
 
   .button {
     width: 120px;

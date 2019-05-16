@@ -63,6 +63,7 @@ a {
 @media screen and (max-width: 480px) {
   h2 {
     font-size: 1.5rem;
+    margin-top: 10%;
   }
 
   h4 {
