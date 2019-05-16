@@ -52,6 +52,10 @@ ul {
 
   li {
     width: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 

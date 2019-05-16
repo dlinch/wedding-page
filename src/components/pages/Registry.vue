@@ -24,7 +24,11 @@ export default {
 .registry {
   height: 100vh;
   text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
 }
+
 
 h2 {
   margin: 15% 0 1%;
@@ -36,11 +40,21 @@ h4 {
   margin: 0 0 15%;
 }
 
+h2, h4, .footer {
+  flex-shrink: 0;
+}
+
+a {
+  flex-grow: 1;
+}
+
 .footer {
+  align-self: flex-end;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 12%;
+  width: 100%;
   font-size: 2.2rem;
   background-color: $blue;
   color: $tan;
