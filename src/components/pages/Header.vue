@@ -74,6 +74,7 @@ h3 {
   }
 
   .button {
+    margin-top: 52px;
     width: 120px;
   }
 }

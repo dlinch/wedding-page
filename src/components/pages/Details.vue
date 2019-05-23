@@ -9,12 +9,13 @@
     <div class="information">
       <h2>The Details</h2>
       <!-- eslint-disable-next-line -->
-      <p>Lorem ipsum dolor sit amet, populo delenit fierent per eu. Vix te iisque malorum reformidans, ea probatus electram per, ei sale definiebas contentiones ius. Delenit urbanitas usu id, ea diam nusquam est. No sit fierent delicatissimi, graeci eloquentiam cum eu. Malorum vivendo pertinax ut usu, id quas sensibus pri. Per at nobis viderer legimus.</p>
+      <p>{{ details1 }}</p>
+      <p>{{ details2 }}</p>
       <div class="links">
         <ul>
           <li>
             <font-awesome-icon icon="glass-cheers" />
-            Ceremony | 5:00pm
+            Ceremony | 6:00pm
           </li>
           <li>
             <font-awesome-icon icon="calendar-alt" />
@@ -46,6 +47,10 @@ export default {
     return {
       // eslint-disable-next-line
       calendar: 'https://calendar.google.com/event?action=TEMPLATE&tmeid=MjJiYzM3YXM5N3N0dnFyODAycnY2M3ExOGYgZGxpbmNoMzNAbQ&tmsrc=dlinch33%40gmail.com',
+      // eslint-disable-next-line
+      details1: 'Hi there! If you are reading this, that means you are probably invited to our wedding. If not, then feel free to buy us something off the registry below anyway! We are madly in love and want to spend the rest of their lives together, so you are cordially invited to wach us get hitched and then celebrate with us afterwards! You can expect cake, a buffet, some adult beverages, and plenty of dancing.',
+      // eslint-disable-next-line
+      details2: 'Our ceremony starts promptly at 6pm, so please start arriving around 5:30pm. We love your little ones, but we want you to party hardy so please plan on childcare accordingly as our wedding is adults only. We have some room blocks set up at some hotels in nearby Boulder, but feel free to stay whever you want! The party ends at 11pm and then the night is yours. There is a button on the first photo to RSVP, so please let us know if you are coming. We know the invites say RSVP by June 13th, and what we totally meant was by July 13th :)',
       hilton: 'http://hiltongardeninn.hilton.com/en/gi/groups/personalized/W/WBUBOGI-RLW-20190912/index.jhtml',
       homewood: 'http://homewoodsuites.hilton.com/en/hw/groups/personalized/B/BOUCOHW-RLW-20190912/index.jhtml',
       // eslint-disable-next-line
@@ -61,7 +66,7 @@ export default {
 .details {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 150vh;
   text-align: center;
 }
 
@@ -102,7 +107,6 @@ ul {
 }
 
 .information {
-  background-color: $tan;
   height: 40%;
 
   h2 {
@@ -125,6 +129,10 @@ ul {
       font-size: 1rem;
      }
    }
+
+  .details {
+    height: 140vh;
+  }
 
   .image-content {
     font-size: 1.5rem;
