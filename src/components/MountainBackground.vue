@@ -20,6 +20,5 @@ export default {
   min-height: 100vh;
   position: relative;
   top: 0;
-  z-index:  -1;
 }
 </style>
