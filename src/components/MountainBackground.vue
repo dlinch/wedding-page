@@ -1,6 +1,6 @@
 <template>
   <div class="background" :style="{'backgroundImage': `url(${require('@/assets/mountainscape.jpg')})`}">
-    <slot>Stuff</slot>
+    <slot></slot>
   </div>
 </template>
 

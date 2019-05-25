@@ -30,6 +30,7 @@ export default {
     text-decoration: none;
 
     &:hover {
+      cursor: pointer;
       color: cornflowerblue;
     }
   }

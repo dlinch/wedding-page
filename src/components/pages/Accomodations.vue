@@ -29,6 +29,12 @@ export default {
   components: {
     Button,
   },
+  data() {
+    return {
+      hilton: 'http://hiltongardeninn.hilton.com/en/gi/groups/personalized/W/WBUBOGI-RLW-20190912/index.jhtml',
+      homewood: 'http://homewoodsuites.hilton.com/en/hw/groups/personalized/B/BOUCOHW-RLW-20190912/index.jhtml',
+    };
+  },
 };
 </script>
 
@@ -36,6 +42,7 @@ export default {
 .accomodations {
   width: 100vw;
   height: 40vh;
+  margin-top: 50px;
 }
 
 h2 {
